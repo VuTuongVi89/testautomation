@@ -1,0 +1,15 @@
+<suite name="Amazon">
+    <parameter name="url"  value="about:"/>
+    <test name="Create Account - Chrome">
+        <parameter name="browser"  value="chrome"/>
+        <classes>
+            <class name="testsuites.amazon.SignUpTest"/>
+        </classes>
+    </test>
+    <test name="Create Account - Safari">
+        <parameter name="browser"  value="safari"/>
+        <classes>
+            <class name="testsuites.amazon.SignUpTest"/>
+        </classes>
+    </test>
+</suite>

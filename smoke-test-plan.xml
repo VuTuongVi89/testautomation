@@ -1,0 +1,18 @@
+<suite name="Smoke">
+    <test name="feature">
+        <classes>
+            <class name="demo.SampleTest">
+                <methods>
+                    <include name="tc01"/>
+                    <include name="tc05"/>
+                </methods>
+            </class>
+            <class name="demo.Sample2Test">
+                <methods>
+                    <exclude name="tc02"/>
+                    <exclude name="tc03"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

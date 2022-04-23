@@ -1,0 +1,7 @@
+<suite name="Product">
+        <test name="regression">
+            <packages>
+                <package name="demo"/>
+            </packages>
+        </test>
+</suite>

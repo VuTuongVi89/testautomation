@@ -1,0 +1,38 @@
+<suite name="demo">
+<!--    <test name="Sample">-->
+<!--        <classes>-->
+<!--            <class name="demo.SampleTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Sample2">-->
+<!--        <classes>-->
+<!--            <class name="demo.Sample2Test"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="regression">-->
+<!--        <packages>-->
+<!--            <package name="demo"/>-->
+<!--        </packages>-->
+<!--    </test>-->
+    <test name="smoke test">
+        <groups>
+            <run>
+                <include name ="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="demo.SampleTest">
+                <methods>
+                    <include name="tc01"/>
+                    <include name="tc05"/>
+                </methods>
+            </class>
+            <class name="demo.Sample2Test">
+                <methods>
+                    <exclude name="tc02"/>
+                    <exclude name="tc03"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

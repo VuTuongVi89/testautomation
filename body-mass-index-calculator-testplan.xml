@@ -1,0 +1,22 @@
+<suite name="calculator">
+    <test name="body mass index - metric unit - chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="testsuites.calculator.BodyMassIndexTest">
+               <methods>
+                   <include name="tc01"/>
+               </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="body mass index - metric unit - firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="testsuites.calculator.BodyMassIndexTest">
+                <methods>
+                    <include name="tc01"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
